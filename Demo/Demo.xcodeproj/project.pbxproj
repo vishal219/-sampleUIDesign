@@ -13,6 +13,13 @@
 		1E944552296C6CF30020F9F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E944550296C6CF30020F9F8 /* Main.storyboard */; };
 		1E944554296C6CF40020F9F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E944553296C6CF40020F9F8 /* Assets.xcassets */; };
 		1E944557296C6CF40020F9F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E944555296C6CF40020F9F8 /* LaunchScreen.storyboard */; };
+		1E944564296C80160020F9F8 /* SplashCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E944562296C80160020F9F8 /* SplashCVC.swift */; };
+		1E944565296C80160020F9F8 /* SplashCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E944563296C80160020F9F8 /* SplashCVC.xib */; };
+		1E944567296C814F0020F9F8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E944566296C814F0020F9F8 /* HomeVC.swift */; };
+		1E944569296C82AC0020F9F8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E944568296C82AC0020F9F8 /* Constant.swift */; };
+		1E94456C296C93740020F9F8 /* MenuCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E94456A296C93740020F9F8 /* MenuCVC.swift */; };
+		1E94456D296C93740020F9F8 /* MenuCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E94456B296C93740020F9F8 /* MenuCVC.xib */; };
+		1E94456F296CB5E70020F9F8 /* TabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E94456E296CB5E70020F9F8 /* TabVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		1E944553296C6CF40020F9F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E944556296C6CF40020F9F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E944558296C6CF40020F9F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E944562296C80160020F9F8 /* SplashCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCVC.swift; sourceTree = "<group>"; };
+		1E944563296C80160020F9F8 /* SplashCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashCVC.xib; sourceTree = "<group>"; };
+		1E944566296C814F0020F9F8 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		1E944568296C82AC0020F9F8 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		1E94456A296C93740020F9F8 /* MenuCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCVC.swift; sourceTree = "<group>"; };
+		1E94456B296C93740020F9F8 /* MenuCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCVC.xib; sourceTree = "<group>"; };
+		1E94456E296CB5E70020F9F8 /* TabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabVC.swift; path = Demo/Storyboards/TabVC.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,54 @@
 		1E944549296C6CF30020F9F8 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				1E94454A296C6CF30020F9F8 /* AppDelegate.swift */,
-				1E94454C296C6CF30020F9F8 /* SceneDelegate.swift */,
-				1E94454E296C6CF30020F9F8 /* ViewController.swift */,
-				1E944550296C6CF30020F9F8 /* Main.storyboard */,
-				1E944553296C6CF40020F9F8 /* Assets.xcassets */,
-				1E944555296C6CF40020F9F8 /* LaunchScreen.storyboard */,
+				1E944561296C6DE00020F9F8 /* Storyboards */,
+				1E94455E296C6D630020F9F8 /* View controllers */,
+				1E944560296C6DB20020F9F8 /* Resources */,
 				1E944558296C6CF40020F9F8 /* Info.plist */,
+				1E94455F296C6D870020F9F8 /* Collection view cells */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		1E94455E296C6D630020F9F8 /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1E94456E296CB5E70020F9F8 /* TabVC.swift */,
+				1E94454E296C6CF30020F9F8 /* ViewController.swift */,
+				1E944566296C814F0020F9F8 /* HomeVC.swift */,
+			);
+			path = "View controllers";
+			sourceTree = "<group>";
+		};
+		1E94455F296C6D870020F9F8 /* Collection view cells */ = {
+			isa = PBXGroup;
+			children = (
+				1E944562296C80160020F9F8 /* SplashCVC.swift */,
+				1E944563296C80160020F9F8 /* SplashCVC.xib */,
+				1E94456A296C93740020F9F8 /* MenuCVC.swift */,
+				1E94456B296C93740020F9F8 /* MenuCVC.xib */,
+			);
+			path = "Collection view cells";
+			sourceTree = "<group>";
+		};
+		1E944560296C6DB20020F9F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1E94454A296C6CF30020F9F8 /* AppDelegate.swift */,
+				1E94454C296C6CF30020F9F8 /* SceneDelegate.swift */,
+				1E944553296C6CF40020F9F8 /* Assets.xcassets */,
+				1E944568296C82AC0020F9F8 /* Constant.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1E944561296C6DE00020F9F8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1E944550296C6CF30020F9F8 /* Main.storyboard */,
+				1E944555296C6CF40020F9F8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +178,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E94456D296C93740020F9F8 /* MenuCVC.xib in Resources */,
 				1E944557296C6CF40020F9F8 /* LaunchScreen.storyboard in Resources */,
+				1E944565296C80160020F9F8 /* SplashCVC.xib in Resources */,
 				1E944554296C6CF40020F9F8 /* Assets.xcassets in Resources */,
 				1E944552296C6CF30020F9F8 /* Main.storyboard in Resources */,
 			);
@@ -138,9 +193,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E94456C296C93740020F9F8 /* MenuCVC.swift in Sources */,
 				1E94454F296C6CF30020F9F8 /* ViewController.swift in Sources */,
+				1E944567296C814F0020F9F8 /* HomeVC.swift in Sources */,
+				1E944564296C80160020F9F8 /* SplashCVC.swift in Sources */,
 				1E94454B296C6CF30020F9F8 /* AppDelegate.swift in Sources */,
 				1E94454D296C6CF30020F9F8 /* SceneDelegate.swift in Sources */,
+				1E94456F296CB5E70020F9F8 /* TabVC.swift in Sources */,
+				1E944569296C82AC0020F9F8 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
